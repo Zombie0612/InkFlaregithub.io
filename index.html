@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InkFlare - Printed T-Shirts Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Poppins, Arial, sans-serif;
+            background: #f7f7f7;
+        }
+
+        /* NAVBAR */
+        header {
+            background: #000;
+            color: white;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 26px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav a {
+            color: white;
+            margin-left: 18px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* HERO */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+            url("https://images.unsplash.com/photo-1521572163474-6864f9cf17ab") center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+        .hero p {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        /* PRODUCT SECTION */
+        section {
+            padding: 40px 25px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .products {
+            display: grid;
+            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .product {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .product img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+        .product h3 {
+            margin: 15px 0 5px;
+        }
+        .product p {
+            margin: 0;
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: #ff4500;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">InkFlare</div>
+        <nav>
+            <a href="#products">T-Shirts</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <div class="hero">
+        <div>
+            <h1>InkFlare</h1>
+            <p>Premium Printed T-Shirts • Bold • Trendy • Unique</p>
+        </div>
+    </div>
+
+    <!-- PRODUCT SECTION -->
+    <section id="products">
+        <h2 style="text-align:center; margin-bottom:30px;">Our Latest Prints</h2>
+
+        <div class="products">
+
+            <!-- PRODUCT 1 -->
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1602810317822-76e7b1a39aea" alt="">
+                <h3>Street Style Tee</h3>
+                <p>₹499</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1562158070-57f8c9f9f3ac" alt="">
+                <h3>Graphic Art Tee</h3>
+                <p>₹549</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1593032465171-8f7f2e7b9f7a" alt="">
+                <h3>Minimalist Tee</h3>
+                <p>₹450</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>Contact: inkflare.store@gmail.com</p>
+        <p>© 2026 InkFlare. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
